@@ -13,7 +13,6 @@ public class DataItem : Data
     /// </summary>
     [SerializeField] private bool _stackable = false;
 
-
     /// <summary>
     /// Retourne si l'objet peux etre empilable
     /// </summary>
@@ -33,4 +32,12 @@ public class DataItem : Data
         } 
     }
 
+    public DataItem(string name, string description,string nameItem, Sprite spriteItem, int nbrItem, bool stackable)
+    {
+        Initialise(name, description);
+        NameItem = nameItem;
+        _spriteItem = spriteItem;
+        NbrItem = nbrItem;
+        _stackable = stackable;
+    }
 }

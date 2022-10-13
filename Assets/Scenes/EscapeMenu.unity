@@ -333,6 +333,7 @@ MonoBehaviour:
   _listCanvas:
   - _name: Menu
     _description: First Menu
+    _specificities: []
     _actualCanvas: {fileID: 1604196816}
 --- !u!4 &111865213
 Transform:
@@ -2484,7 +2485,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5406479e3e044784f860b69add58b05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scriptableItems: []
+  defaultMode: 0
+  nbrMaxStackable: 10
+  nbrMaxSlots: 42
+  nbrMaxWeight: 42
+  nbrMaxNumber: 42
+  defaultWeight: 0.5
+  actualNbr: 0
+  _scriptableItems:
+  - {fileID: 11400000, guid: 4e1149c41b791744c81c0411fbe5c6e3, type: 2}
+  - {fileID: 11400000, guid: 3dbd332973217784bb032024a52b9d71, type: 2}
   _dataItems: []
   _prefabItem: {fileID: 2986069072616991949, guid: 54caa5bdcdf724a48b420db43abfbc2a,
     type: 3}
@@ -2492,3 +2502,4 @@ MonoBehaviour:
   _itemContainer: []
   _debugMod: 1
   _debugNbrItems: 25
+  _debugMaxItemDuplicate: 3
