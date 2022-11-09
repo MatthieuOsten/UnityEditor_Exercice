@@ -1,18 +1,27 @@
 {
-    "name": "InputActionAsset",
+    "name": "InputPlayer",
     "maps": [
         {
             "name": "Player",
             "id": "e2218877-1e37-40a9-b15d-c4a9bf7ee9a7",
             "actions": [
                 {
-                    "name": "Movement",
+                    "name": "MoveForward",
                     "type": "Value",
-                    "id": "e4db4b32-105f-4db2-ad2e-4b2f53d4fd46",
-                    "expectedControlType": "Vector2",
-                    "processors": "ScaleVector2(y=0.5),ScaleVector2(x=-1,y=-0.5)",
+                    "id": "9a783b04-3875-4a85-ba8b-4b23510c3b46",
+                    "expectedControlType": "Axis",
+                    "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "MoveRight",
+                    "type": "Button",
+                    "id": "2fd361ea-8f4c-43ef-bbc5-5e4a2fc875ed",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -23,9 +32,42 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "MoveForward",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "21d71167-d8e4-4ed3-b814-030c7b7ec75b",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "positive",
+                    "id": "09c820d1-324b-4947-9d36-7c526ae66e5b",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "18cb98bd-ee54-42c9-afd1-ea8e10dd4147",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveForward",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",
@@ -34,62 +76,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "MoveRight",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "2D Vector",
-                    "id": "17e8afff-9b2f-478d-87bd-a160463357a9",
-                    "path": "2DVector",
+                    "name": "1D Axis",
+                    "id": "9e2d6b4b-4256-402c-8715-6378e926eaf2",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "MoveRight",
                     "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "up",
-                    "id": "b49268e2-651f-4dde-8ba9-f032395d30c4",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "d22078ba-e44f-4561-9def-38c05a8b797f",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "654c1fb0-6c86-4e21-9655-a09adf2295c3",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Movement",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "5e885f76-4170-4e90-b55a-907ed6b4bc0b",
+                    "name": "positive",
+                    "id": "7e3d0334-76b6-4f2c-b135-ffac16dad55e",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Movement",
+                    "action": "MoveRight",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "negative",
+                    "id": "8c79ad91-8f13-481a-91dc-5959eefe14a9",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MoveRight",
                     "isComposite": false,
                     "isPartOfComposite": true
                 }
